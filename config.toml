@@ -1,0 +1,47 @@
+[editor]
+auto-pairs = false
+bufferline = "always"
+completion-replace = true
+cursorcolumn = true
+cursorline = true
+gutters = ["diagnostics", "spacer", "line-numbers", "diff"]
+line-number = "relative"
+rulers = [80]
+
+[editor.indent-guides]
+render = true
+skip-levels = 2
+# character = "⋮"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "hint"
+prefix-len = 2
+
+# [editor.lsp]
+# display-progress-messages = true
+# display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.select = "SELECT"
+mode.insert = "INSERT"
+center = [ "version-control" ]
+
+[keys.insert]
+"A-," = [ ":insert-output echo -n '-> '", "append_mode", "collapse_selection" ]
+"A-." = [ ":insert-output echo -n '=> '", "append_mode", "collapse_selection" ]
+
+[keys.insert.j]
+k = "normal_mode"
+
+[keys.insert.j.j]
+";" = "collapse_selection"
+"," = "keep_primary_selection"
+
+[keys.normal]
+X = "extend_line_above"
+space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
