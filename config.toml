@@ -36,6 +36,8 @@ center = [ "version-control" ]
 "C-S-," = [ ":insert-output echo -n '<='", "append_mode", "collapse_selection" ]
 "C-." = [ ":insert-output echo -n '->'", "append_mode", "collapse_selection" ]
 "C-S-." = [ ":insert-output echo -n '=>'", "append_mode", "collapse_selection" ]
+"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
+"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
 
 [keys.insert.j]
 k = "normal_mode"
@@ -47,3 +49,5 @@ k = "normal_mode"
 [keys.normal]
 X = "extend_line_above"
 space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
+"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
+"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
