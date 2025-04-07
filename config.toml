@@ -32,8 +32,10 @@ mode.insert = "INSERT"
 center = [ "version-control" ]
 
 [keys.insert]
-"A-," = [ ":insert-output echo -n '-> '", "append_mode", "collapse_selection" ]
-"A-." = [ ":insert-output echo -n '=> '", "append_mode", "collapse_selection" ]
+"C-," = [ ":insert-output echo -n '<-'", "append_mode", "collapse_selection" ]
+"C-S-," = [ ":insert-output echo -n '<='", "append_mode", "collapse_selection" ]
+"C-." = [ ":insert-output echo -n '->'", "append_mode", "collapse_selection" ]
+"C-S-." = [ ":insert-output echo -n '=>'", "append_mode", "collapse_selection" ]
 
 [keys.insert.j]
 k = "normal_mode"
