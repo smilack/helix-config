@@ -9,7 +9,7 @@ cursorcolumn = true
 cursorline = true
 gutters = ["diagnostics", "line-numbers", "diff"]
 line-number = "relative"
-rulers = [80]
+rulers = [81]
 true-color = true
 
 [editor.indent-guides]
