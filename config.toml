@@ -55,3 +55,5 @@ X = "extend_line_above"
 space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
 "A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
 "A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
+H = ["flip_selections", "move_char_left"]
+"S-left" = ["flip_selections", "move_char_left"]
