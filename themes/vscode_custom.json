@@ -1,0 +1,87 @@
+"workbench.colorCustomizations": {
+  // primary text cursor
+  "editorCursor.foreground":"#ff8a65",
+  // "editorCursor.background":"#ff0000",
+
+  // multi-cursor colors (ONLY when there are 2 or more cursors)
+  "editorMultiCursor.primary.foreground":"#ef5350",
+  "editorMultiCursor.secondary.foreground":"#fff176",
+  //"editorMultiCursor.primary.background":"#ff0000",
+  //"editorMultiCursor.secondary.background":"#ff0000",
+
+  // selection
+  "editor.selectionBackground": "#42a5f5a0",
+  // selection in unfocused tab
+  "editor.inactiveSelectionBackground":"#42a5f550",
+  // same content as selection
+  "editor.selectionHighlightBackground": "#ff8a6540",
+
+  // bar across current line
+  "editor.lineHighlightBackground": "#11111140",
+  "editor.lineHighlightBorder": "#111111c0",
+
+  // highlight selected word or word cursor is idle in -
+  // disabling them because they layer over selections and it's annoying
+  "editor.wordHighlightBackground": "#ff8a6500",
+  "editor.wordHighlightTextBackground": "#ff8a6500",
+  "editor.wordHighlightStrongBackground": "#ff8a6500",
+
+  // vertical bars left of text
+  "editorIndentGuide.background1":"#ef535040",
+  "editorIndentGuide.background2":"#ff8a6540",
+  "editorIndentGuide.background3":"#fff17640",
+  "editorIndentGuide.background4":"#66bb6a40",
+  "editorIndentGuide.background5":"#42a5f540",
+  "editorIndentGuide.background6":"#ab47bc40",
+  "editorIndentGuide.activeBackground1":"#ef5350",
+  "editorIndentGuide.activeBackground2":"#ff8a65",
+  "editorIndentGuide.activeBackground3":"#fff176",
+  "editorIndentGuide.activeBackground4":"#66bb6a",
+  "editorIndentGuide.activeBackground5":"#42a5f5",
+  "editorIndentGuide.activeBackground6":"#ab47bc",
+
+  // current line number color
+  "editorLineNumber.activeForeground":"#ff9955",
+
+  // background of brace/bracket/paren pair cursor is in
+  "editorBracketMatch.background": "#2df1b6",
+  "editorBracketMatch.border": "#fff0",
+
+  // color for each pair of braces/brackets/parens
+  "editorBracketHighlight.foreground1":"#ef5350",
+  "editorBracketHighlight.foreground2":"#ff8a65",
+  "editorBracketHighlight.foreground3":"#fff176",
+  "editorBracketHighlight.foreground4":"#66bb6a",
+  "editorBracketHighlight.foreground5":"#42a5f5",
+  "editorBracketHighlight.foreground6":"#ab47bc",
+
+  // color for horiz/vert lines inside active brackets
+  // (if different from editorBracketHighlight.foreground)
+  // (theme will not use higher # activeBackground than highest fg)
+  // "editorBracketPairGuide.activeBackground1":"#ef5350",
+  // "editorBracketPairGuide.activeBackground2":"#ff8a65",
+  // "editorBracketPairGuide.activeBackground3":"#fff176",
+  // "editorBracketPairGuide.activeBackground4":"#66bb6a",
+  // "editorBracketPairGuide.activeBackground5":"#42a5f5",
+  // "editorBracketPairGuide.activeBackground6":"#ab47bc",
+
+  // current "Find" target
+  "editor.findMatchBackground":"#66bb6aff",
+  "editor.findMatchForeground":"#fffe",
+
+  // other/inactive "Find" targets
+  "editor.findMatchHighlightBackground":"#ff8a6580",
+  "editor.findMatchHighlightForeground":"#fffe",
+  // "editor.findMatchHighlightBorder":"#ff0000",
+
+  // highlight for whole selection if "Find in Selection" active
+
+  "editor.findRangeHighlightBackground":"#ab47bc60",
+  // "editor.findRangeHighlightBorder":"#00ff00",
+
+  // background when hovering non-comment word
+  "editor.hoverHighlightBackground": "#42a5f540",
+
+  // background of line containing current find match
+  "editor.rangeHighlightBackground": "#ab47bc60"
+}
