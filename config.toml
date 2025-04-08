@@ -7,17 +7,22 @@ color-modes = true
 completion-replace = true
 cursorcolumn = true
 cursorline = true
+# Remove spacers arund line numbers
 gutters = ["diagnostics", "line-numbers", "diff"]
 line-number = "relative"
+# I like the ruler on the line after 80, like a barrier
 rulers = [81]
+# Allow arbitrary hex codes in themes?
 true-color = true
 
 [editor.indent-guides]
 render = true
+# Skip first two indent guides because 0-2 tabs is pretty obvious already
 skip-levels = 2
 # character = "⋮"
 
 [editor.inline-diagnostics]
+# Show all LSP messages under relevant lines
 cursor-line = "hint"
 other-lines = "hint"
 prefix-len = 2
@@ -30,31 +35,50 @@ prefix-len = 2
 # enable = true
 
 [editor.statusline]
+# Full words for mode names
 mode.normal = "NORMAL"
 mode.select = "SELECT"
 mode.insert = "INSERT"
+
+# Add git branch in middle
 center = [ "version-control" ]
 
 [keys.insert]
+# Chords for left arrows
 "C-," = [ ":insert-output echo -n '<-'", "append_mode", "collapse_selection" ]
 "C-S-," = [ ":insert-output echo -n '<='", "append_mode", "collapse_selection" ]
+
+# Chords for right arrows
 "C-." = [ ":insert-output echo -n '->'", "append_mode", "collapse_selection" ]
 "C-S-." = [ ":insert-output echo -n '=>'", "append_mode", "collapse_selection" ]
+
+# Line duplication
 "A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
 "A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
 
 [keys.insert.j]
+# jk to leave insert mode
 k = "normal_mode"
 
 [keys.insert.j.j]
+# jj to access selection commands
 ";" = "collapse_selection"
 "," = "keep_primary_selection"
 
 [keys.normal]
+# Add Ins shortcut for insert mode
 ins = "insert_mode"
+
+# Selections
 X = "extend_line_above"
-space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
-"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
-"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
+
+# Movement
 H = ["flip_selections", "move_char_left"]
 "S-left" = ["flip_selections", "move_char_left"]
+
+# Insert newline at cursor
+space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
+
+# Line duplication
+"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
+"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
