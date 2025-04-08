@@ -26,8 +26,8 @@ prefix-len = 2
 # display-progress-messages = true
 # display-inlay-hints = true
 
-[editor.soft-wrap]
-enable = true
+# [editor.soft-wrap]
+# enable = true
 
 [editor.statusline]
 mode.normal = "NORMAL"
