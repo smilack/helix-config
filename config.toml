@@ -3,6 +3,7 @@ theme = "fix_line_numbers"
 [editor]
 auto-pairs = false
 bufferline = "always"
+color-modes = true
 completion-replace = true
 cursorcolumn = true
 cursorline = true

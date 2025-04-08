@@ -1,3 +1,4 @@
 inherits = "base16_default"
 "ui.linenr" = "#555555"
 "ui.linenr.selected" = "#cccccc"
+"ui.statusline.normal" = { bg = "#666666" }
