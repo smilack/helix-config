@@ -50,6 +50,7 @@ k = "normal_mode"
 "," = "keep_primary_selection"
 
 [keys.normal]
+ins = "insert_mode"
 X = "extend_line_above"
 space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
 "A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
