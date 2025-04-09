@@ -64,6 +64,9 @@ C-space = "hover"
 # jk to leave insert mode
 k = "normal_mode"
 
+# jw to leave insert and save
+w = ["normal_mode", ":write"]
+
 # j; to get rid of distracting selections
 ";" = ["collapse_selection", "keep_primary_selection"]
 
