@@ -64,10 +64,14 @@ center = [ "version-control" ]
 # jk to leave insert mode
 k = "normal_mode"
 
-[keys.insert.j.j]
-# jj to access selection commands
-";" = "collapse_selection"
-"," = "keep_primary_selection"
+# j; to get rid of distracting selections
+";" = ["collapse_selection", "keep_primary_selection"]
+
+# Trying out merging these for now
+# [keys.insert.j.j]
+# # jj to access selection commands
+# ";" = "collapse_selection"
+# "," = "keep_primary_selection"
 
 [keys.normal]
 # Open language popup
