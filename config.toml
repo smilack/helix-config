@@ -45,7 +45,7 @@ center = [ "version-control" ]
 
 [keys.insert]
 # Open language popup
-"C-space" = "hover"
+C-space = "hover"
 
 # Chords for left arrows
 "C-," = [ ":insert-output echo -n '<-'", "append_mode", "collapse_selection" ]
@@ -85,7 +85,7 @@ X = "extend_line_above"
 
 # Movement
 H = ["flip_selections", "move_char_left"]
-"S-left" = ["flip_selections", "move_char_left"]
+S-left = ["flip_selections", "move_char_left"]
 
 # Insert newline at cursor
 space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
