@@ -3,3 +3,4 @@ inherits = "base16_default"
 "ui.linenr.selected" = "#cccccc"
 "ui.statusline.normal" = { bg = "#666666" }
 "comment" = "#707070"
+"ui.virtual.ruler" = { bg = "#333333" }
