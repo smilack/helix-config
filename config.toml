@@ -53,8 +53,9 @@ center = [ "version-control" ]
 "C-S-." = [ ":insert-output echo -n '=>'", "append_mode", "collapse_selection" ]
 
 # Line duplication
-"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
-"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
+# going to try not to use this in insert mode for now
+# "A-S-down" = ["extend_to_line_bounds", "yank", "open_below", "replace_with_yanked"]
+# "A-S-up" = ["extend_to_line_bounds", "yank", "open_above", "replace_with_yanked"]
 
 [keys.insert.j]
 # jk to leave insert mode
@@ -80,5 +81,9 @@ H = ["flip_selections", "move_char_left"]
 space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
 
 # Line duplication
-"A-S-down" = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
-"A-S-up" = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
+A-S-down = ["extend_to_line_bounds", "yank", "paste_after"]
+A-S-up = ["extend_to_line_bounds", "yank", "paste_before"]
+
+# Line movement
+A-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
