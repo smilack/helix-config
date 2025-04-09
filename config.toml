@@ -41,19 +41,19 @@ mode.select = "SELECT"
 mode.insert = "INSERT"
 
 # Add git branch in middle
-center = [ "version-control" ]
+center = ["version-control"]
 
 [keys.insert]
 # Open language popup
 C-space = "hover"
 
 # Chords for left arrows
-"C-," = [ ":insert-output echo -n '<-'", "append_mode", "collapse_selection" ]
-"C-S-," = [ ":insert-output echo -n '<='", "append_mode", "collapse_selection" ]
+"C-," = [":insert-output echo -n '<-'", "append_mode", "collapse_selection"]
+"C-S-," = [":insert-output echo -n '<='", "append_mode", "collapse_selection"]
 
 # Chords for right arrows
-"C-." = [ ":insert-output echo -n '->'", "append_mode", "collapse_selection" ]
-"C-S-." = [ ":insert-output echo -n '=>'", "append_mode", "collapse_selection" ]
+"C-." = [":insert-output echo -n '->'", "append_mode", "collapse_selection"]
+"C-S-." = [":insert-output echo -n '=>'", "append_mode", "collapse_selection"]
 
 # Line duplication
 # going to try not to use this in insert mode for now
@@ -88,7 +88,7 @@ H = ["flip_selections", "move_char_left"]
 S-left = ["flip_selections", "move_char_left"]
 
 # Insert newline at cursor
-space."." = [ "collapse_selection", "insert_mode", "insert_newline", "normal_mode" ]
+space."." = ["collapse_selection", "insert_mode", "insert_newline", "normal_mode"]
 
 # Line duplication
 A-S-down = ["extend_to_line_bounds", "yank", "paste_after"]
