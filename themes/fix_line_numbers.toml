@@ -12,6 +12,13 @@ inherits = "base16_default"
 # make rule more subtle
 "ui.virtual.ruler" = { bg = "#333333" }
 
+# for some reason, whitespace is rendering italic by default,
+#   which affects indent guides
+# explicitly setting modifiers to an empty array isn't necessary
+#   but it's a reminder
+"ui.virtual.indent-guide" = { fg = "#005a5a" }
+"ui.virtual.whitespace" = { fg = "#00a0a0", modifiers = [] }
+
 # make hints light green instead of gray
 hint = { fg = "#c5ffa8" }
 
@@ -33,4 +40,3 @@ modifiers = [ "reversed", "italic" ]
 ["ui.selection.primary"]
 fg = "#eb8c8a"
 modifiers = [ "reversed" ]
-

@@ -14,12 +14,14 @@ line-number = "relative"
 rulers = [81]
 # Allow arbitrary hex codes in themes?
 true-color = true
+whitespace.render = { newline = "all" }
+whitespace.characters.newline = "␤"
 
 [editor.indent-guides]
 render = true
 # Skip first two indent guides because 0-2 tabs is pretty obvious already
 skip-levels = 2
-# character = "⋮"
+character = "⤻"
 
 [editor.inline-diagnostics]
 # Show all LSP messages under relevant lines
