@@ -15,3 +15,22 @@ inherits = "base16_default"
 # make hints light green instead of gray
 hint = { fg = "#c5ffa8" }
 
+# make cursors brighter, distinct colors
+["ui.cursor"]
+fg = "#fff176"
+modifiers = [ "reversed", "italic" ]
+
+["ui.cursor.primary"]
+fg = "#ef5350"
+modifiers = [ "reversed" ]
+
+# make selection colors similar to cursor colors
+["ui.selection"]
+fg = "#bdbc7b"
+# add italic to secondary selections to make more distinct
+modifiers = [ "reversed", "italic" ]
+
+["ui.selection.primary"]
+fg = "#eb8c8a"
+modifiers = [ "reversed" ]
+
