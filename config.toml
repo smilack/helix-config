@@ -12,6 +12,11 @@ gutters = ["diagnostics", "line-numbers", "diff"]
 line-number = "relative"
 # I like the ruler on the line after 80, like a barrier
 rulers = [81]
+# Smart tabs make the tab key jump to the next node(?) if there's non-whitespace
+#   anywhere left of the cursor. This is really annoying when trying to insert
+#   tabs when writing multiline comments. With smart tabs enabled you can still
+#   press S-tab to insert spaces but I don't care about the jumping anyway.
+smart-tab.enable = false
 # Allow arbitrary hex codes in themes?
 true-color = true
 whitespace.render = { newline = "all" }
