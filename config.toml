@@ -17,6 +17,10 @@ rulers = [81]
 #   tabs when writing multiline comments. With smart tabs enabled you can still
 #   press S-tab to insert spaces but I don't care about the jumping anyway.
 smart-tab.enable = false
+# Not trimming final newlines is default but since I'm setting trim-trailing
+#   trim-trailing-whitespace I thought I'd make it explicit
+trim-final-newlines = false
+trim-trailing-whitespace = true
 # Allow arbitrary hex codes in themes?
 true-color = true
 whitespace.render = { newline = "all" }
