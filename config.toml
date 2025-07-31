@@ -107,7 +107,10 @@ A-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
 s = "@<C-s>ggf(ma(s\\w<ret>t<ret>:sort<ret><C-o><C-o>"
 
 # Export symbol under cursor
-e = "@<C-s>miwyggf(mmO, <esc>P<A-o>s\\w<ret>t<ret>:sort<ret><C-o><C-o><C-o>"
+e = "@<C-s>beyggf(ma(;O, <esc>P<A-o>s\\w<ret>t<ret>:sort<ret><C-o><C-o><C-o>"
 
 # Export symbol under cursor with (..)
-E = "@<C-s>miwyggf(mmO, <esc>Pa(..)<esc><A-o>s\\w<ret>t<ret>:sort<ret><C-o><C-o><C-o>"
+E = "@<C-s>beyggf(ma(;O, <esc>Pa(..)<esc><A-o>s\\w<ret>t<ret>:sort<ret><C-o><C-o><C-o>"
+
+# Export class under cursor
+c = "@<C-s>beyggf(ma(;O, class <esc>P<A-o><A-o>s\\w<ret>t<ret>:sort<ret><C-o><C-o><C-o>"
