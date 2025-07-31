@@ -1,7 +1,17 @@
 inherits = "base16_default"
+
+# default non-current line numbers are too dark to see
 "ui.linenr" = "#555555"
-"ui.linenr.selected" = "#cccccc"
+
+# make "NORMAL" label stand out from status line
 "ui.statusline.normal" = { bg = "#666666" }
-"comment" = "#707070"
+
+# default comment color is too dark
+"comment" = { fg = "#707070"}
+
+# make rule more subtle
 "ui.virtual.ruler" = { bg = "#333333" }
+
+# make hints light green instead of gray
 hint = { fg = "#c5ffa8" }
+
