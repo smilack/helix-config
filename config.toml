@@ -41,8 +41,10 @@ cursor-line = "warning"
 # display-progress-messages = true
 # display-inlay-hints = true
 
-# [editor.soft-wrap]
-# enable = true
+[editor.soft-wrap]
+enable = true
+max-indent-retain = 0
+wrap-indicator = "⤿"
 
 [editor.statusline]
 # Full words for mode names
