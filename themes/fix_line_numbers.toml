@@ -8,6 +8,10 @@ inherits = "base16_default"
 
 # default comment color is too dark
 "comment" = { fg = "#707070"}
+type = "#efd64b"
+keyword = "#957bbe"
+
+"variable" = "#e05a4f"
 
 # make rule more subtle
 "ui.virtual.ruler" = { bg = "#333333" }
@@ -18,6 +22,7 @@ inherits = "base16_default"
 #   but it's a reminder
 "ui.virtual.indent-guide" = { fg = "#005a5a" }
 "ui.virtual.whitespace" = { fg = "#00a0a0", modifiers = [] }
+"ui.virtual.wrap" = { fg = "#00ffff" }
 
 # make hints light green instead of gray
 hint = { fg = "#c5ffa8" }
