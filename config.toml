@@ -7,6 +7,7 @@ color-modes = true
 completion-replace = true
 cursorcolumn = true
 cursorline = true
+end-of-line-diagnostics = "hint"
 # Remove spacers arund line numbers
 gutters = ["diagnostics", "line-numbers", "diff"]
 line-number = "relative"
@@ -34,9 +35,7 @@ character = "⤻"
 
 [editor.inline-diagnostics]
 # Show all LSP messages under relevant lines
-cursor-line = "hint"
-other-lines = "hint"
-prefix-len = 2
+cursor-line = "warning"
 
 # [editor.lsp]
 # display-progress-messages = true
