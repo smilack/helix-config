@@ -21,7 +21,7 @@ keyword = "#957bbe"
 # explicitly setting modifiers to an empty array isn't necessary
 #   but it's a reminder
 "ui.virtual.indent-guide" = { fg = "#005a5a" }
-"ui.virtual.whitespace" = { fg = "#00a0a0", modifiers = [] }
+"ui.virtual.whitespace" = { fg = "#005a5a", modifiers = [] }
 "ui.virtual.wrap" = { fg = "#00ffff" }
 
 # make hints light green instead of gray

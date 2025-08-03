@@ -25,17 +25,7 @@ trim-trailing-whitespace = true
 # Allow arbitrary hex codes in themes?
 true-color = true
 whitespace.render = { newline = "all" }
-# whitespace.characters.newline = "⮯" no
-# whitespace.characters.newline = "⮨" no
-# whitespace.characters.newline = "⮰" no
-# whitespace.characters.newline = "🖗" no
-# whitespace.characters.newline = "🢱" no
-# whitespace.characters.newline = "⤾" no
-# whitespace.characters.newline = "⤶" no
-# whitespace.characters.newline = "␤" no
-# whitespace.characters.newline = "⤸"
-# whitespace.characters.newline = "⤦"
-# whitespace.characters.newline = "↵"
+whitespace.characters.newline = "⤸"
 
 [editor.indent-guides]
 render = true
